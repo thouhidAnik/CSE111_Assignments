@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+    int number1,number2,count = 0;
+    scanf("%d%d",&number1,&number2);
+    printf("Common factors are : ");
+    for (int i = 1; i<number1; i++) {
+        if (number1 % i == 0 && number2 % i == 0) {
+            printf("%d ",i);
+            count++;
+        }
+    }
+    printf("\nNumber of common factors are : %d\n",count);
+    return 0;
+}

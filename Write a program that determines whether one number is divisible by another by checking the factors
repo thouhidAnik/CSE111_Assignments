@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+    int number1,number2,count = 1;
+    scanf("%d%d",&number1,&number2);
+    for (int i = 1; i<=number1; i++) {
+        if (number1 % i == 0) {
+            if (number2 == i)count = 0;
+        }
+    }
+    if (count)printf("%d is not divisible by %d\n",number1,number2);
+    else printf("%d is divisible by %d\n",number1,number2);
+    return 0;
+}
